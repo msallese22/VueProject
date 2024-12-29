@@ -1,11 +1,11 @@
-import './assets/main.css'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
-
 import { createApp } from 'vue'
-import Vue from 'vue'
 import App from './App.vue'
-import { MdToolbar } from 'vue-material/dist/components'
 
-Vue.use(MdToolbar)
-createApp(App).mount('#app')
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap"
+import router from './router.js'
+
+//Nick, for realsies, is this the right way to do this, seriously, I'm getting scared.
+
+
+createApp(App).use(router).mount('#app')

@@ -1,9 +1,19 @@
 <template>
-  <md-toolbar class="md-accent" md-elevation="1">
-    <h3 class="md-title" style="flex: 1">About</h3>
-    <md-button>Guessing Game</md-button>
-    <md-button class="md-primary">Create</md-button>
-  </md-toolbar>
+  <nav class="navbar navbar-expand-lg navbar-background">
+    <router-link class="navbar-brand" to="/About">&#127800 Welcome!</router-link>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <router-link class="nav-link" to="/About">About &#128125<span class="sr-only"></span></router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/GuessingGame">Guessing Game &#128175</router-link>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -15,5 +25,10 @@ export default{
 </script>
 
 <style scoped>
+
+.navbar-background
+{
+  background-color: #ffd1f2;
+}
 
 </style>

@@ -1,10 +1,10 @@
-<script setup>
+<template>
+<p>Guess again, beech</p>
+</template>
+
+<script>
 
 </script>
-
-<template>
-
-</template>
 
 <style scoped>
 
