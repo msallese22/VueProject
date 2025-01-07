@@ -21,14 +21,14 @@
 </template>
 
 <script>
-import {h} from "vue";
 
 export default {
   name: "GuessingGame",
-mounted(){
+  mounted()
+  {
     this.createNumber();
     this.decideGuesses();
-},
+  },
   data()
   {
     return {
@@ -43,16 +43,15 @@ mounted(){
   methods: {
     createNumber()
     {
-      this.randomNumber =  Math.floor(Math.random() * (this.highestNumber - 1) ) + 1;
-    }
+      this.randomNumber = Math.floor(Math.random() * (this.highestNumber - 1)) + 1;
     },
     decideGuesses()
     {
-      this.numberOfGuesses = this.highestNumber/20;
+      this.numberOfGuesses = this.highestNumber / 20;
     },
     checkGuess()
     {
-      if(this.numberOfGuesses > 0)
+      if (this.numberOfGuesses > 0)
       {
         if (this.guessyGuess === this.randomNumber)
         {
@@ -72,6 +71,7 @@ mounted(){
         this.resultMessage = "He's free! And he eats losers!"
       }
     }
+  }
 }
 </script>
 
